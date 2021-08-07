@@ -17,16 +17,16 @@ https://peerjs.com/
 npm install ngx-socket-io --save
 
 5. In app/polyfills.ts, at the end to add one more line:
- 
+
  (window as any).global = window;
 
 6. In app.module.ts, import the socket-io.
 
-import { SocketIoConfig, SocketIoModule } from 'ngx-socket-io';
+    import { SocketIoConfig, SocketIoModule } from 'ngx-socket-io';
 
-const config: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
+    const config: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
 
-imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, SocketIoModule.forRoot(config)],
+    imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, SocketIoModule.forRoot(config)],
 
 7. In ngOnInit(), do the program setTimeout and socket event to display all video connected.
 
