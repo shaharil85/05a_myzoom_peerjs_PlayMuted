@@ -24,3 +24,14 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* For enable copy text*/
+* {
+    -webkit-user-select: text;
+    
+    -moz-user-select: text;
+    
+    -ms-user-select: text;
+    
+    user-select: text; 
+}

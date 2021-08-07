@@ -1,3 +1,4 @@
+
 # Step to do WebRTC/Zoom Clone using PeerJS and Socket IO
 
 1. Go to peerjs websitef for our references.
@@ -31,3 +32,29 @@ https://peerjs.com/
 7. In ngOnInit(), do the program setTimeout and socket event to display all video connected.
 
 8. Do others available functions.
+
+# For deployment in shared website:
+
+1. In global, put below command to allow copy the words:
+
+    * {
+        -webkit-user-select: text;
+        
+        -moz-user-select: text;
+        
+        -ms-user-select: text;
+        
+        user-select: text; 
+    }
+
+2. In index.html,  put "." to href:
+    <base href="./" />
+
+3. In app-routing.module.ts, put usehash: true to allow when press refresh:
+
+    @NgModule({
+    imports: [
+        RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules, useHash:true })
+    ],
+    exports: [RouterModule]
+    })
