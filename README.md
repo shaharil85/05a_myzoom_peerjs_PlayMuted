@@ -4,7 +4,7 @@
 https://peerjs.com/
 
 2. Copy the library from link below and put in index.html:
-<script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
 
 3. In tsconfig.json, insert "esModuleInterop": true:
     "compilerOptions": {
@@ -13,12 +13,12 @@ https://peerjs.com/
         ....
     }
 
-4. Install the socket io by:
-npm install ngx-socket-io --save
+4. Install the socket io by \n:
+   npm install ngx-socket-io --save
 
 5. In app/polyfills.ts, at the end to add one more line:
 
- (window as any).global = window;
+    (window as any).global = window;
 
 6. In app.module.ts, import the socket-io.
 
