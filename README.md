@@ -13,7 +13,7 @@ https://peerjs.com/
         ....
     }
 
-4. Install the socket io by \n:
+4. Install the socket io by:
    npm install ngx-socket-io --save
 
 5. In app/polyfills.ts, at the end to add one more line:
